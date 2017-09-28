@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="follow,index">
+  <meta name="robots" content="all">
+  <meta name="abstract" content="Local Weather">
+  <meta name="distribution" content="Global">
+  <meta name="description" content="Show Local Weather">
+  <meta name="keywords" content="local weather, show weather, weather, local, show, freecodecamp">
+  <meta name="author" content="Antonijo Galic">
+  <link rel="icon" href="images/favicon.png">
+
+  <title>Local Weather</title>
+
+  <!-- Animate CSS -->
+  <link href="css/animate.min.css" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome CSS -->
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Weather Icons CSS -->
+  <link href="https://erikflowers.github.io/weather-icons/css/weather-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="jumbotron">
+
+    <div class="container">
+
+      <div class="row">
+        <h3 class="col-md-6 col-md-offset-3 text-center local">Local Weather</h3>
+      </div>
+
+      <hr>
+
+      <div class="row">
+        <div class="col-md-6 col-xs-6 text-center">
+          <div class="icon"></div>
+        </div>
+        <div class="col-md-6 col-xs-6 text-center">
+          <div class="temperature"></div>
+          <div class="summary"></div>
+        </div>
+      </div>
+
+      <hr class="line">
+
+      <div class="row">
+        <div class="col-md-4 col-xs-4 text-left">
+          <div class="current-time">
+            <div class="hrs">00</div>
+            <div class="colon-1">:</div>
+            <div class="min">00</div>
+            <div class="colon-2">:</div>
+            <div class="sec">00</div>
+          </div>
+        </div>
+        <div class="col-md-8 col-xs-8 text-right">
+          <div class="current-day">Day Month Date Year</div>
+        </div>
+      </div>
+
+      <hr class="line">
+
+      <div class="row">
+        <div class="col-md-12 col-xs-12">
+          <div class="city">Loading Location...</div>
+        </div>
+      </div>
+
+      <hr class="line">
+
+      <div class="row buttons">
+        <div class="col-md-8 col-md-offset-2  text-center">
+          <div class="btn"><a id="toggle-temp" href="#">Fahrenheit</a></div>
+          <div class="btn"><a id="refresh" href="#">Refresh</a></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="loading col-md-6 col-md-offset-3">
+          <i class="fa fa-spinner fa-spin"></i>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Copyright &copy; 2016 Antonijo Galic - Galiant</p>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+  <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+  <script src="js/ie-emulation-modes-warning.js"></script>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- jQuery UI -->
+  <script src="js/jquery-ui.min.js"></script>
+
+  <!-- Custom JavaScript -->
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
